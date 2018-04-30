@@ -1,0 +1,467 @@
+body {
+    font-family: 'Libre Baskerville', serif;
+}
+.d1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+.d2 {
+    float: right;
+}
+.bord {
+    border: 2px solid black;
+    padding-left: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+span {
+    color: red;
+}
+input {
+    margin-bottom: 6px;
+    margin-left: 10px;
+    
+}
+select {
+    margin-bottom: 6px;
+    margin-left: 7px;
+}
+.first select {
+    width: 209px !important;
+    width: 209px;
+    
+}
+.firsts{
+    padding-left: 14px;
+}
+
+.firstt{
+    margin-left: -21px;
+}
+.but {
+    text-align: center;
+}
+.scheme {
+    margin-left: 24px;
+}
+.serial {
+    width: 209px !important;
+    margin-left: 26px;
+}
+.fname {
+    margin-left: 7px;
+    width: 209px !important;
+}
+.mname {
+    margin-left: 138px;
+    width: 209px !important;
+}
+.lname {
+    margin-left: 169px;
+     width: 209px !important;
+}
+.dob {
+    width: 209px !important;
+    margin-left: 34px;
+}
+.gender {
+    margin-top: 7px;
+}
+.gender1 {
+    padding-left: 43px;
+}
+.marital {
+    margin-left: -22px;
+}
+.ffname {
+    margin-left: 25px;
+    width: 209px !important;
+}
+.fmname {
+    width: 209px !important;
+    margin-left: 138px;
+}
+.flname {
+    width: 209px !important;
+     margin-left: 169px;
+}
+.mfname {
+    width: 209px !important;
+    margin-left: 17px;
+}
+.mmname {
+    margin-left: 138px;
+     width: 209px !important;
+}
+.mlname {
+     width: 209px !important;
+     margin-left: 169px;
+}
+.nation {
+    width: 209px !important;
+    margin-left: 46px;
+}
+.religion {
+     width: 209px !important;
+    margin-left: 37px;
+}
+.caste {
+    width: 209px !important;
+    margin-left: 13px;
+}
+.castes {
+    margin-left: -21px;
+}
+.aadhar {
+    width: 209px !important;
+    margin-left: 45px;
+}
+.pan {
+    width: 209px !important;
+    margin-left: 4px; 
+}
+.voter {
+    width: 209px !important;
+    margin-left: 36px;
+}
+.voters {
+    margin-left: -19px;
+}
+.mobile {
+    width: 209px !important;
+    margin-left: 47px;
+}
+.landline {
+    width: 209px !important;
+    margin-left: 11px;
+}
+.alternate {
+    width: 209px !important;
+    margin-left: 30px;
+}
+.alternates {
+    margin-left: -18px;
+}
+.email {
+    width: 209px !important;
+    margin-left: 62px;
+}
+.line1 {
+    width: 195px !important;
+    margin-left: 0px;
+}
+.line2 {
+    width: 209px !important;
+    margin-left: 13px;
+}
+.state {
+    width: 209px !important;
+    margin-left: 80px;
+}
+.states {
+    margin-left: -112px;
+}
+.district {
+    width: 209px !important;
+    margin-left: 73px;
+}
+.city {
+    width: 209px !important;
+    margin-left: 66px;
+}
+.pincode {
+    width: 209px !important;
+    margin-left: 66px;
+}
+.role {
+    margin-left: 89px;
+}
+.mari {
+    width: 209px !important;
+    margin-left: 23px;
+}
+.pincodes {
+    margin-left: -18px;
+}
+.parlia {
+    width: 127px !important;
+}
+.chec {
+    margin-left: -104px;
+}
+.pline1 {
+    width: 209px !important;
+    margin-left: 12px;
+}
+.pline2 {
+    width: 209px !important;
+    margin-left: 12px;
+}
+.pstates {
+    margin-left: -112px;
+}
+.pstate{
+      width: 209px !important;
+    margin-left: 80px;
+}
+.bank {
+    width: 209px !important;
+    margin-left: 50px;
+}
+.branch {
+    width: 209px !important;
+    margin-left: 71px;
+}
+.branches {
+    margin-left: 173px;
+}
+.account {
+    width: 209px !important;
+    margin-left: 51px;
+}
+.ifsc {
+    width: 209px !important;
+   margin-left: 15px;
+}
+.acc {
+    margin-left: 8px;
+}
+.sch {
+    margin-left: 6px;
+}
+.news {
+    width: 209px !important;
+    margin-left: 13px;
+}
+.centre {
+    margin-left: 8px;
+}
+.cent {
+    width: 209px !important;
+    margin-left: 83px;
+}
+.photo {
+    width: 209px !important;
+    margin-left: 35px;
+    font-size: 12px;
+    
+}
+.aadf{
+    width: 209px !important;
+    margin-left: 180px;
+    font-size: 12px;
+}
+.sector {
+    width: 209px !important;
+    margin-left: 88px;
+}
+.aad{
+    margin-left: 8px;
+}
+.counselor {
+    width: 209px !important;
+    margin-left: 121px;
+}
+.counselors {
+    margin-left: 8px;
+}
+@media only screen and (max-width: 767px) {
+/*
+    .nd {
+        margin-left: 82px;
+    margin-right: -61px;
+    }
+*/
+    input{
+        margin-left: 0px;
+        margin-bottom: 0px;
+       
+    }
+    select{
+        margin-left: 0px;
+        margin-bottom: 0px;
+        
+    }
+    .firstt {
+    margin-left: 0px;
+}
+    .role{
+        margin-left: 0px;
+    }
+    .scheme {
+        margin-left: 0px;
+    }
+    .serial{
+        margin-left: 0px;
+    }
+    .fname {
+        margin-left: 0px;
+    }
+    .mname{
+        margin-left: 0px;
+    }
+    .lname {
+        margin-left: 0px;
+    }
+    .dob{
+        margin-left: 0px;
+    }
+    .gender1{
+        padding-left: 0px;
+    }
+    .marital {
+    margin-left: 0px;
+}
+    .mari {
+        margin-left: 0px;
+    }
+    .ffname {
+margin-left: 0px;
+}
+    .fmname{
+        margin-left: 0px;
+    }
+    .flname{
+        margin-left: 0px;
+    }
+    .mfname {
+    margin-left: 0px;
+    }
+    .mmname{
+        margin-left: 0px;
+    }
+    .mlname{
+        margin-left: 0px;
+    }
+    .nation{
+        margin-left: 0px;
+    }
+    .religion{
+        margin-left: 0px;
+    }
+    .castes {
+    margin-left: 0px;
+}
+    .caste{
+        margin-left: 0px;
+    }
+    .aadhar {
+    margin-left: 0px;
+}
+    .pan{
+        margin-left: 0px;
+    }
+    .voters{
+        margin-left: 0px;
+    }
+    .voter {
+        margin-left: 0px;
+    }
+    .mobile {
+        margin-left: 0px;
+    }
+    .alternates {
+    margin-left: 0px;
+}
+    .alternate {
+        margin-left: 0px;
+    }
+    .landline{
+        margin-left: 0px;
+    }
+    .email{
+        margin-left: 0px;
+    }
+    .line1 {
+    width: 209px !important;
+    margin-left: 0px;
+}
+    .line2{
+        margin-left: 0px;
+    }
+    .states {
+    margin-left: 0px;
+}
+    .state{
+        margin-left: 0px;
+    }
+    .district{
+        margin-left: 0px;
+    }
+    .city{
+        margin-left: 0px;
+    }
+    .pincodes {
+    margin-left: 0px;
+}
+    .pincode {
+        margin-left: 0px;
+    }
+    .parlia {
+    width: 209px !important;
+}
+    .chec{
+        margin-left: 0px;
+    }
+    .pline1{
+        margin-left: 0px;
+    }
+    .pline2{
+        margin-left: 0px;
+    }
+    .pstates{
+        margin-left: 0px;
+    }
+    .pstate{
+        margin-left: 0px;
+    }
+    .bank {
+        margin-left: 0px;
+    }
+    .branches {
+        margin-left: 0px;
+    }
+    .branch {
+         margin-left: 0px;
+    }
+    .ifsc {
+         margin-left: 0px;
+    }
+    .acc{
+         margin-left: 0px;
+    }
+    .account {
+         margin-left: 0px;
+    }
+    .sch{
+         margin-left: 0px;
+    }
+    .news {
+         margin-left: 0px;
+    }
+    .centre{
+        margin-left: 0px;
+    }
+    .cent {
+        margin-left: 0px;
+    }
+    .sector{
+        margin-left: 0px;
+    }
+    .counselors{
+        margin-left: 0px;
+    }
+    .counselor{
+        margin-left: 0px;
+    }
+    .photo{
+        margin-left: 0px;
+    }
+    .aad{
+        margin-left: 0px;
+    }
+    .aadf{
+        margin-left: 0px;
+    }
+}
