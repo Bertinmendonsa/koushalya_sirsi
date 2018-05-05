@@ -1,0 +1,22 @@
+body {
+    font-family: 'Libre Baskerville', serif;
+    
+}
+.bold {
+    text-align: center;
+}
+.panel-title {
+    text-align: center;
+}
+.bt {
+    text-align: center;
+}
+.space {
+    margin-top: 10%;
+    
+}
+.pan {
+    width: 70%;
+    margin-left: 15%;
+    line-height: 2.5;
+}

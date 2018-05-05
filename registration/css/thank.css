@@ -1,0 +1,74 @@
+body {
+    font-family: 'Libre Baskerville', serif;
+    
+}
+.card-base > .card-icon {
+        text-align: center;
+        position: relative;
+    }
+
+.imagecard { 
+    z-index: 2;
+    display: block;
+    positioN: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    margin: 0 auto;
+    color: white;
+}
+.card-base > .card-icon > .card-data {
+    margin-top: -24px;
+/*    background: ghostwhite;*/
+    border: 1px solid #e0e0e0;
+    padding: 15px 0 10px 0;
+     box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+       width: 19%;
+    margin-left: 425px;
+    border-radius: 50%;
+    }
+    #widgetCardIcon {
+        background: green !important;
+        font-size: 22px;
+        line-height: 44px;
+    }
+#widgetCardIcon > i:hover{
+    color: white;
+}
+/*
+#widgetCardIcon a :hover {
+    color: white;
+}
+*/
+a:hover {
+    color: white !important;
+}
+a {
+     color: white !important;
+}
+.bo {
+    margin-top: 6%;
+}
+body > div > div > div > h3 > a{
+    color: #1b09a9 !important;
+}
+  body > div > div > div > h3 > a:hover{
+    color: #1b09a9 !important;
+      text-decoration: none !important;
+}  
+.type {
+    text-align: center;
+}
+.types {
+    margin-top: 39px;
+    margin-left: 7%;
+}
+.ty {
+     margin-left: 7%;
+}
+li {
+    font-size: 18px;
+    margin-left: 28%;
+}

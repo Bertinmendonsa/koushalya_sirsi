@@ -1,0 +1,116 @@
+body > div.container > div > div.panel-heading.panelcolor{
+    background-color: #317eac;
+    height: 50px;
+        color: white;
+    text-align: center;
+    font-size: 22px;    
+
+}
+body > div.container > div{
+    width:50%;
+    margin-left: 230px;
+    height:300px;
+}
+#myDIV {
+    width: 300px;
+    height: 200px;
+    background: red;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {background-color: red;}
+    to {background-color: blue;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {background-color: red;}
+    to {background-color: blue;}
+}
+.box1 {
+    width: 125%;
+    height: 50px;
+    border: 2px solid skyblue;
+    margin-left: 95px;
+       padding: 10px;
+    text-align: center;
+    box-shadow: 10px 5px 5px skyblue;
+}
+.box1:hover {
+    width: 125%;
+    height: 50px;
+    border: 2px solid darkblue;
+    margin-left: 95px;
+       padding:    10px;
+    text-align: center;
+    box-shadow: 10px 5px 5px darkblue;
+}
+
+.box2 {
+    width: 125%;
+    height: 50px;    
+    padding:    10px;
+    text-align: center;
+    border: 2px solid skyblue;
+     box-shadow: 10px 5px 5px skyblue;
+      margin-left: 95px;
+}
+.box2:hover {
+    width: 125%;
+    height: 50px;    
+/*    padding: 50px;*/
+    border: 2px solid darkblue;
+     box-shadow: 10px 5px 5px darkblue;
+      margin-left: 95px;
+       padding:    10px;
+    text-align: center;
+}
+.box3 {
+    width: 125%;
+    height: 50px;    
+/*    padding: 50px;*/
+    border: 2px solid skyblue;
+      margin-left: 95px;
+     box-shadow: 10px 5px 5px skyblue;
+       padding:    10px;
+    text-align: center;
+}
+.box3:hover {
+    width: 125%;
+    height: 50px;    
+/*    padding: 50px;*/
+    border: 2px solid darkblue;
+      margin-left: 95px;
+     box-shadow: 10px 5px 5px darkblue;
+       padding:    10px;
+    text-align: center;
+}
+.sub15
+{
+    background-color: darkblue;
+    border: darkblue;
+    color:white;
+    border:1px solid darkblue;
+/*    border-radius: 50%;*/
+/*    width:16%;*/
+    height:40px;
+    border-radius:12%;
+    margin-left: 48%;
+}
+ .sub15:hover
+{
+    background-color:cornflowerblue;
+    border: cornflowerblue;
+    color:white;
+    border:1px solid cornflowerblue;
+    border-radius: 12%;
+/*    width:16%;*/
+    height:40px;
+    margin-left: 48%;
+}
+.animateimage{
+    margin-left: -670px;
+}

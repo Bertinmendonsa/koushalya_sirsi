@@ -29,8 +29,18 @@ select {
 }
 .first select {
     width: 209px !important;
-    width: 209px;
+   
     
+}
+.disab{
+     width: 209px !important;
+    margin-left: 5px;
+}
+.are {
+    margin-top: 9px;
+}
+.ares {
+    margin-left: 12px;
 }
 .firsts{
     padding-left: 14px;
@@ -211,14 +221,14 @@ select {
 }
 .branch {
     width: 209px !important;
-    margin-left: 71px;
+    margin-left: 73px;
 }
 .branches {
-    margin-left: 173px;
+    margin-left: -19px;
 }
 .account {
     width: 209px !important;
-    margin-left: 51px;
+    margin-left: 49px;
 }
 .ifsc {
     width: 209px !important;
@@ -266,6 +276,14 @@ select {
 .counselors {
     margin-left: 8px;
 }
+.holder {
+    width: 182px !important;
+    margin-left: 3px;
+}
+.password {
+        width: 209px!important;
+        margin-bottom: 15px;
+    }
 @media only screen and (max-width: 767px) {
 /*
     .nd {
@@ -463,5 +481,16 @@ margin-left: 0px;
     }
     .aadf{
         margin-left: 0px;
+    }
+    .holder{
+        margin-left: 0px;
+        width: 209px !important;
+    }
+    .disab {
+        margin-left: 0px;
+    }
+    .password {
+        width: 209px!important;
+        margin-bottom: 15px;
     }
 }

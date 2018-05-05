@@ -1,9 +1,25 @@
+<?php
+session_start();
+// unset($_SESSION['admin_id']);
+
+
+if($_SESSION['admin_id']==""){
+  header("Location: Admin_login.php");
+}
+else{
+  if($_SESSION['candidate_id']==""){
+      header("Location: login.php");
+  }
+  else{
+  // echo $_SESSION['candidate_id']." ".$_SESSION['admin_id'];
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head runat="server">
 
     <meta charset="utf-8">
-    <title>Free HTML5 Bootstrap Admin Template</title>
+    <title>PMKVY</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Charisma, a fully featured, responsive, HTML5, Bootstrap admin template.">
     <meta name="author" content="Muhammad Usman">
@@ -17,19 +33,6 @@
     <link id="bs-css" href="css/bootstrap-cerulean.min.css" rel="stylesheet">
 
     <link href="css/charisma-app.css" rel="stylesheet">
-    <link href='bower_components/fullcalendar/dist/fullcalendar.css' rel='stylesheet'>
-    <link href='bower_components/fullcalendar/dist/fullcalendar.print.css' rel='stylesheet' media='print'>
-    <link href='bower_components/chosen/chosen.min.css' rel='stylesheet'>
-    <link href='bower_components/colorbox/example3/colorbox.css' rel='stylesheet'>
-    <link href='bower_components/responsive-tables/responsive-tables.css' rel='stylesheet'>
-    <link href='bower_components/bootstrap-tour/build/css/bootstrap-tour.min.css' rel='stylesheet'>
-    <link href='css/jquery.noty.css' rel='stylesheet'>
-    <link href='css/noty_theme_default.css' rel='stylesheet'>
-    <link href='css/elfinder.min.css' rel='stylesheet'>
-    <link href='css/elfinder.theme.css' rel='stylesheet'>
-    <link href='css/jquery.iphone.toggle.css' rel='stylesheet'>
-    <link href='css/uploadify.css' rel='stylesheet'>
-    <link href='css/animate.min.css' rel='stylesheet'>
 <!--    <link href="css/question_list.css" rel="stylesheet">-->
      <link href="css/header.css" rel="stylesheet">
 <!--    <link href="css/modal.css" rel="stylesheet">-->
@@ -38,7 +41,7 @@
 
 
     <!-- jQuery -->
-    <script src="bower_components/jquery/jquery.min.js"></script>
+ 
 
     <!-- The fav icon -->
     <link rel="shortcut icon" href="img/favicon.ico">
@@ -61,6 +64,12 @@ document.onkeydown = function(event){
 </script>
 
 <script>
+
+function gameLost() {
+ 
+    document.getElementById('autosub').submit();
+}
+setTimeout(gameLost, 1200000);
 
 </script>
 
@@ -117,7 +126,7 @@ document.onkeydown = function(event){
           <div class="panel panel-default panelcolr">
             <?php
             require('dbconnect.php');
-            $question_list="SELECT * FROM `kk_questions`";
+            $question_list="SELECT * FROM `kk_questions` WHERE `active`='1'";
             $question_paper = mysqli_query($conn,$question_list);
             $serialnum = 1;
             while ($question_paper_row=mysqli_fetch_array($question_paper)) {
@@ -134,12 +143,15 @@ document.onkeydown = function(event){
        while($fetch_options_row = mysqli_fetch_array($fetch_options_exe)){
 
        ?>
-       <input type="radio"  name="answer[<?php echo $serialnum; ?>]" value="<?php echo $fetch_options_row['question_options_id']; ?>"><span class="paragap"><?php echo $fetch_options_row['question_option']; ?></span><br>
+
+       <input type="radio"  name="answer[<?php echo $serialnum; ?>]" required="true" value="<?php echo $fetch_options_row['question_options_id']; ?>"><span class="paragap"><?php echo $fetch_options_row['question_option']; ?></span><br>
+
        <?php
        }
        ?>
-
-
+       <div style="display:none">
+       <input name="answer[<?php echo $serialnum; ?>]" type="radio"  required="true" value="9" checked/><span class="paragap">NONE</span>
+</div>
        </div>
 
 
@@ -152,8 +164,6 @@ document.onkeydown = function(event){
 
 
 
-
-        </div>
         </div>
        <button type="submit" class="sub13">Submit</button>
 
@@ -163,6 +173,7 @@ document.onkeydown = function(event){
         </form>
 
 <hr>
+        </div>
 
 <!-- footer strats here-->
 <div class="footer">
@@ -200,10 +211,20 @@ function checkSecond(sec) {
 
     </script>
 
-<script>
+<!-- <script>
+function autosubmit(){
+$("#autosub").submit();
+}
 
-</script>
+
+$(document).ready(function(){
+  var myvar = setInterval(autosubmit, 1000);
+})
+
+</script> -->
 
 
     </body>
 </html>
+
+  <?php } } ?>

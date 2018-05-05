@@ -1,0 +1,46 @@
+.progress{
+    background-color: white;
+    border: 1px solid #317eac;
+    width: 50%;
+    margin-left: 25%;
+    
+}
+.testlines{
+    text-align:center;
+}
+.testheads{
+    text-align: center;
+}
+.sub14
+{
+    background-color: darkblue;
+    border: darkblue;
+    color:white;
+    border:1px solid darkblue;
+    border-radius: 50%;
+    width:16%;
+    height:40px;
+    margin-left: 42%;
+}
+ .sub14:hover
+{
+    background-color:cornflowerblue;
+    border: cornflowerblue;
+    color:white;
+    border:1px solid cornflowerblue;
+    border-radius: 50%;
+    width:16%;
+    height:40px;
+    margin-left: 42%;
+}
+.animateimagee{
+width: 33%;
+    margin-left: 434px;
+    height: 168px;
+    margin-top: -34px;
+}
+.colr{
+    background-color: deepskyblue;
+    color: white;
+  
+}
