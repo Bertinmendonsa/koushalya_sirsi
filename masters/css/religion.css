@@ -1,8 +1,28 @@
+.foot {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:darkslategray;
+   color: white;
+   text-align: center;
+    height: 9%;
+}
 .religion{
     width:20%;
     margin-top: -3%;
-    margin-left: 8%;
+    margin-left: 9%;
     border: 2px solid skyblue;
+}
+body{
+    overflow-x:hidden!important;
+}
+.alignn{
+    margin: 20px;
+}
+.refresh{ 
+    margin-left: 96%;
+    margin-top: -62px;!important
 }
 label{
   color:darkblue;
@@ -52,13 +72,7 @@ label{
     height:40px;
 /*    margin-left: 35%;*/
 }
-  
- .refresh{ 
-    margin-left: 96%;
-    height: 30px;
-    width: 4%;
-    margin-top: -62px;!important
-} 
+
 .breadcrumb{
     width:100%;
 

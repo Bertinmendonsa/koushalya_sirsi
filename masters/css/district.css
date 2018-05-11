@@ -1,8 +1,24 @@
+.foot {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:darkslategray;
+   color: white;
+   text-align: center;
+    height: 9%;
+}
+body{
+    overflow-x:hidden!important;
+}
 .district{
     width:20%;
     margin-top: -3%;
     margin-left: 8%;
     border: 2px solid skyblue;
+}
+.alignn{
+    margin: 20px;
 }
 label{
   color:darkblue;
@@ -69,10 +85,8 @@ select.drop{
       border: 2px solid skyblue;
 }
   
- .refresh{ 
+  .refresh{ 
     margin-left: 96%;
-    height: 30px;
-    width: 4%;
     margin-top: -62px;!important
 } 
 .breadcrumb{

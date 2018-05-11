@@ -12,7 +12,7 @@
 <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
 <link rel="stylesheet" type="text/css" href="css/animate.css">
 <link rel="stylesheet" type="text/css" href="css/main_styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -37,8 +37,8 @@
 		</div>
 
 	</header>
-	
-	
+
+
 	<!-- Home -->
 
 	<div class="home">
@@ -46,9 +46,9 @@
 		<!-- Hero Slider -->
 		<div class="hero_slider_container">
 			<div class="hero_slider owl-carousel">
-				
+
 				<!-- Hero Slide -->
-                
+
                 <div class="hero_slide">
 					<div class="hero_slide_background" style="background-image:url(images/slider_background.jpg)"></div>
 					<div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
@@ -67,22 +67,17 @@
 -->
 					</div>
 				</div>
-				
+
 				<!-- Hero Slide -->
 				<div class="hero_slide">
 					<div class="hero_slide_background" style="background-image:url(images/course_6.jpg)"></div>
 					<div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
-<!--
-						<div class="hero_slide_content text-center">
-							<h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut">
-Practice is the <span>best</span> of all instructions. </h1>
-						</div>
--->
+
 					</div>
 				</div>
-				
+
 				<!-- Hero Slide -->
-				
+
 
 			</div>
 
@@ -90,33 +85,38 @@ Practice is the <span>best</span> of all instructions. </h1>
 			<div class="hero_slider_right hero_slider_nav trans_200"><span class="trans_200"><i style="font-size: 32px;" class="fa fa-angle-right"></i></span></div>
 		</div>
 </div>
-    
+
     <div class="hero_boxes">
 		<div class="hero_boxes_inner">
 			<div class="container">
 				<div class="row">
 
-					<div class="col-md-4 hero_box_col">
-						<div class="hero_box d-flex flex-row align-items-center justify-content-start">
+				<div class="col-md-4 hero_box_col">	<a href="registration/register.php">
+					<div class="hero_box d-flex flex-row align-items-center justify-content-start">
 							<img src="images/earth-globe.svg" class="svg" alt="">
 							<div class="hero_box_content">
 								<h2 class="hero_box_title">Register</h2>
-								<a href="#" class="hero_box_link">view more</a>
+<!--								<a href="registration/register.php" class="hero_box_link">view more</a>-->
+                                <div class="hero_box_link">view more</div>
 							</div>
 						</div>
-					</div>
+                         </a>
+                      
+					</div> 
 
-					<div class="col-md-4 hero_box_col">
+					<div class="col-md-4 hero_box_col"><a href="testexecution/Admin_login.php">
 						<div class="hero_box d-flex flex-row align-items-center justify-content-start">
 							<img src="images/books.svg" class="svg" alt="">
 							<div class="hero_box_content">
 								<h2 class="hero_box_title">Take Test</h2>
-								<a href="#" class="hero_box_link">view more</a>
+<!--								<a href="testexecution/Admin_login.php" class="hero_box_link">view more</a>-->
+                                <div class="hero_box_link">view more</div>
 							</div>
 						</div>
+                        </a>
 					</div>
 
-				
+
 
 				</div>
 			</div>
@@ -129,9 +129,9 @@ Practice is the <span>best</span> of all instructions. </h1>
 		<div class="container">
 			<div class="footer_bar d-flex flex-column flex-sm-row align-items-center">
 				<div class="footer_copyright">
-					<span> Powered by MAHAT INNOVATIONS.</span>
+					<span> MAHAT INNOVATIONS </span>
 				</div>
-				
+
 			</div>
 
 		</div>

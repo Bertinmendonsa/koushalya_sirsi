@@ -1,7 +1,18 @@
+<?php
+session_start();
+if($_SESSION['Admin_role'] =="" || $_SESSION['Admin_admin_id']=="")
+{
+  header('Location: login_dashboard.php');
+}
+else{
+
+
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+
     <meta charset="utf-8">
     <title>PMKVY</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,7 +43,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html"> 
+            <a class="navbar-brand" href="index.html">
                 <span>Koushalya kendra</span></a>
 <!--<img alt="Charisma Logo" src="img/logo20.png" class="hidden-xs"/>-->
             <!-- user dropdown starts -->
@@ -50,15 +61,15 @@
             <!-- user dropdown ends -->
 
             <!-- theme selector starts -->
-       
- 
+
+
 
         </div>
     </div>
     <!-- topbar ends -->
 <div class="ch-container">
     <div class="row">
-        
+
         <!-- left menu starts -->
         <?php
         require('left-menu.php');
@@ -88,20 +99,19 @@
         </li>
 -->
         <h4>Add State</h4>
-         <a href="#" class="btn btn-info refresh">
-          <span class="glyphicon glyphicon-refresh alignrefresh"></span>
-        </a>
+            <button class="btn btn-info refresh" onclick="myFunction()"><span class="glyphicon glyphicon-refresh alignrefresh"></span></button>
+
     </ul>
 </div>
-            
-            
+
+
             <!-- qualifivcation form-->
             <div class="container">
 <!--  <h2>Vertical (basic) form</h2>-->
   <form method="POST" action="master_entry/state_add.php">
     <div class="form-group">
       <label for="state">State:</label>
-      <input type="text" class="form-control state" id="state" placeholder="Enter Your State" 
+      <input type="text" class="form-control state" id="state" placeholder="Enter Your State"
       name="state_name">
     </div>
 
@@ -116,22 +126,15 @@
 
 </div>
  </div>
-</div>  <hr>
-  <footer class="row" style="background-color:darkslategray;">
-        <p class="col-md-9 col-sm-9 col-xs-12 copyright" style="text-align:center;margin-top:190px;color:white;margin-right:90px;">&copy; <a href="http://usman.it" target="_blank">Muhammad
-                Usman</a> 2012 - 2015</p>
-
-<!--
-        <p class="col-md-3 col-sm-3 col-xs-12 powered-by " style="text-align:center;margin-top:190px;color:white:margin-left:90px;">Powered by: <a
-                href="http://usman.it/free-responsive-admin-template">Charisma</a></p>
--->
-    </footer>
-
+</div>
+    <div class="foot">
+  <p class="alignn">MAHAT INNOVATIONS</p>
+</div>
 
 <!-- external javascript -->
 
 
-    
+
       <script>
 var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
@@ -147,6 +150,13 @@ for (i = 0; i < dropdown.length; i++) {
     }
   });
 }</script>
+     <!-- script for refresh button-->
+    <script>
+function myFunction() {
+    location.reload();
+}
+</script>
 
 </body>
 </html>
+<?php } ?>

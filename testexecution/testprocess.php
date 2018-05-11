@@ -8,7 +8,7 @@ unset($_SESSION['admin_id']);
 <head>
 
     <meta charset="utf-8">
-    <title>Free HTML5 Bootstrap Admin Template</title>
+    <title>PMKVY</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Charisma, a fully featured, responsive, HTML5, Bootstrap admin template.">
     <meta name="author" content="Muhammad Usman">
@@ -94,15 +94,8 @@ unset($_SESSION['admin_id']);
 <a href="resultdisplay.php">
     <button type="submit" class="sub14"><i class="fa fa-search"> View Result</i></button>
 </a>
-  <div style="margin-top:80px;"></div>
-<!-- footer strats here-->
-<div class="footer">
-
-        <div class="footerr">
-            <p>Copyright</p>
-    </div>
-
-
+  <div class="foot">
+  <p class="alignn">MAHAT INNOVATIONS</p>
 </div>
 
     <script>

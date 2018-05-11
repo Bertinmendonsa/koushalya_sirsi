@@ -16,6 +16,8 @@ session_regenerate_id(true);
 
 $_SESSION['admin_sid']= session_id();
 
+$error_msg = "Admin Username/Password is  Incorrect";
+
 if(isset($_POST['admin_login'])){
 
 $admin_auth_query = "SELECT `email`,`role_id` FROM `kk_users` WHERE `active`='1' && `email`='$email' && `password`='$pwd'";
@@ -29,6 +31,8 @@ $admin_auth_query = "SELECT `email`,`role_id` FROM `kk_users` WHERE `active`='1'
 
   }
   else{
+    $_SESSION['error'] = $error_msg.mysqli_error($conn);
+
     header('Location: Admin_login.php');
   }
 

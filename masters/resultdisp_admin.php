@@ -1,30 +1,41 @@
+<?php
+session_start();
+if($_SESSION['Admin_role'] =="" || $_SESSION['Admin_admin_id']=="")
+{
+  header('Location: login_dashboard.php');
+}
+else{
+
+
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
+
     <meta charset="utf-8">
-    <title>Free HTML5 Bootstrap Admin Template</title>
+    <title>PMKVY</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Charisma, a fully featured, responsive, HTML5, Bootstrap admin template.">
     <meta name="author" content="Muhammad Usman">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    
-    
-    
+
+
+
+
 
     <!-- The styles -->
     <link id="bs-css" href="css/bootstrap-cerulean.min.css" rel="stylesheet">
 
     <link href="css/charisma-app.css" rel="stylesheet">
-    
+
     <link href="css/resultdisp_admin.css" rel="stylesheet">
      <link href="css/header.css" rel="stylesheet">
     <link href="css/modal.css" rel="stylesheet">
 
     <!-- jQuery -->
     <script src="bower_components/jquery/jquery.min.js"></script>
-    
+
 
     <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -47,7 +58,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html"> 
+            <a class="navbar-brand" href="index.html">
                 <span>Koushalya kendra</span></a>
 <!--<img alt="Charisma Logo" src="img/logo20.png" class="hidden-xs"/>-->
             <!-- user dropdown starts -->
@@ -64,13 +75,13 @@
             </div>
             <!-- user dropdown ends -->
 
-          
+
         </div>
     </div>
     <!-- topbar ends -->
 <div class="ch-container">
     <div class="row">
-        
+
         <!-- left menu starts -->
       <?php
       require('left-menu.php');
@@ -78,7 +89,7 @@
         <!--/span-->
         <!-- left menu ends -->
 
-        
+
 
         <div id="content" class="col-lg-10 col-sm-10">
             <!-- content starts -->
@@ -86,30 +97,29 @@
     <ul class="breadcrumb">
 
         <h4>Students Result List</h4>
-         <a href="#" class="btn btn-info refresh">
-          <span class="glyphicon glyphicon-refresh alignrefresh"></span>
-        </a>
+            <button class="btn btn-info refresh" onclick="myFunction()"><span class="glyphicon glyphicon-refresh alignrefresh"></span></button>
+
     </ul>
 </div>
-            
-            
+
+
             <!-- qualifivcation form-->
             <div class="container">
 <!--  <h2>Vertical (basic) form</h2>-->
   <form>
     <div class="form-group">
-        
-      
+
+
    <div class="row">
-         
-       <div class="col-lg-10 col-sm-10">     
+
+       <div class="col-lg-10 col-sm-10">
     <div class="box">
-  
+
         <div class="box-inner">
             <div class="box-header well" data-original-title="">
                 <h2><i class="fa fa-question"></i> Questions View </h2>
 
-     
+
                 <div class="box-icon">
                 <a href="#" class="btn btn-minimize btn-round btn-default"><i
                             class="glyphicon glyphicon-chevron-up"></i></a>
@@ -117,12 +127,12 @@
                             class="glyphicon glyphicon-remove"></i></a>
                 </div>
             </div>
-           
+
             <div class="box-content">
-                 
+
                 <input type="text" id="myInput"  onkeyup="myFunction()"  class="form-control searchtab" placeholder="Search for names.." title="Type in a name"><span class="fa fa-search searchtable"></span>
                 <hr>
-      
+
                 <table id="myTable" class="questionlisttable" style="width:100%;">
                     <thead class="studentrelistthead">
                         <th>SL.No</th>
@@ -152,60 +162,55 @@
                          <td><?php echo $queryRow['Maximum_score']; ?></td>
                          <td><?php echo $queryRow['obtained_marks']; ?></td>
                          <td><?php echo $queryRow['date_time']; ?></td>
-                        
-                        
+
+
                     </tr>
 
                 <?php
                 $slno++;
               }
                 ?>
-                   
-              
 
-                        
-                  
+
+
+
+
              </tbody>
         </table>
     </div>
      </div>
-              
+
 </div>
  </div>
  </div>
       </div>
-      
-     
+
+
  </form>
  </div>
 
     <button type="submit" class="sub16">Close</button>
-            
-     
-     <br>  
+
+
+     <br>
             <br>
-            
+
  </div>
 
 </div>
 
-<div> 
+<div>
 </div>
 
 </div>
- 
-    
-    
-    
-    
+
+
+
+
+
 <!-- footer strats here-->
-<div class="footer">
-
-        <div class="footerr"> 
-            <p>Copyright</p>
-    </div>
-            
-       
+<div class="foot">
+<p class="alignn">MAHAT INNOVATIONS</p>
 </div>
 
 <!-- external javascript -->
@@ -227,15 +232,15 @@ for (i = 0; i < dropdown.length; i++) {
   });
 }</script>
 
-    
-    
-    
+
+
+
     <!-- prev button js-->
 <!--    <script src="js/question_listprev.js"></script>-->
     <!--for search-->
     <script>
 function myFunction() {
-  // Declare variables 
+  // Declare variables
   var input, filter, table, tr, td, i;
   input = document.getElementById("myInput");
   filter = input.value.toUpperCase();
@@ -251,9 +256,17 @@ function myFunction() {
       } else {
         tr[i].style.display = "search";
       }
-    } 
+    }
   }
+}
+</script>
+
+     <!-- script for refresh button-->
+    <script>
+function myFunction() {
+    location.reload();
 }
 </script>
 </body>
 </html>
+<?php } ?>

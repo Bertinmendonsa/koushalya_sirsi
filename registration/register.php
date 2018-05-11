@@ -20,7 +20,12 @@
 <body>
 
 <div class="container nd">
+  <img src="../images/skillindia.png" alt="logo" class="imga">
+    <img src="../images/NSDC_B_7-8-14.gif" alt="logo" class="imgb">
+
     <h1 class="d1">PMKVY Registration form</h1>
+       <img src="../images/logo.jpg" alt="logo" class="imgc">
+   <img src="../images/icalogo.jpg" alt="icalogo" class="imgd">
     <p class="d2">( Note : Fields with <span>*</span> mark are mandatory )</p>
     <br>
 <form class="form-inline bord" method="post" action="candidate_reg_handler.php" enctype="multipart/form-data">
@@ -519,6 +524,15 @@
 
       </select>
     </div>
+<!-- 
+    <script>
+      $(document).ready(function(){
+        $("#example_1").click(function(){
+            $("#field1").val("NONE");
+            console.log($("#field1").val());
+        });
+      });
+    </script> -->
         </div>
 
 
@@ -633,7 +647,7 @@ $(document).ready(function(){
 
 
 <!--    disability onclick function-->
-    <script>
+    <!-- <script>
    $(function () {
         $("#field1").prop('disabled', true);
         $("#example_0").on("click", function () {
@@ -643,7 +657,7 @@ $(document).ready(function(){
             $("#field1").prop('disabled', true);
         });
     });
-    </script>
+    </script> -->
     <!--    disability onclick function ends-->
     <!--  photo size  restrictor-->
     <script>
@@ -668,6 +682,49 @@ uploadField.onchange = function() {
   };
 };
 </script>
+
+    <script>
+      $(document).ready(function(){
+        $("#example_1").click(function(){
+          $("#field1").empty();
+            $("#field1").append('<option value="NONE" selected>NONE</option>');
+            console.log($("#field1").val());
+        });
+
+
+
+
+
+      });
+
+
+      $(document).ready(function(){
+
+        $("#example_0").click(function(){
+          var id = $("#example_0").val();
+
+          if(id){
+            $.ajax({
+                url: "ajax-php/disability_list.php",
+                dataType: 'Json',
+                data: {'id':id},
+                success: function(data) {
+                  console.log(data);
+                    $('#field1').empty();
+                    $.each(data, function(key, value) {
+                        $('#field1').append('<option value="'+ key +'">'+ value +'</option>');
+                    });
+                }
+            });
+
+          }
+
+        });
+
+
+      });
+    </script>
+
 <!--  adhaar size  restrictor-->
 </body>
 </html>

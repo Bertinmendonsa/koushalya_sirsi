@@ -1,3 +1,6 @@
+<?php
+session_start();
+ ?>
 <!DOCTYPE html>
 <html lang="en" >
 
@@ -45,13 +48,27 @@
   <button type="submit" name="candidate_login" class="btn btn-default btn-submit">Login</button>
 </form>
   <div class="utilities">
-    <a href="#">Forgot Password?</a>
+    <a href="candidate_forgetpass.php">Forgot Password?</a>
     <a href="#">Sign Up &rarr;</a>
   </div>
 </div>
 
+<?php
 
+if(isset($_SESSION['candidate_error'])){
+  $error = $_SESSION['candidate_error'];
+?>
+<script>
+  alert('<?php echo $error; ?>');
+</script>
+<?php
+}
+ ?>
 
 </body>
 
 </html>
+
+<?php
+unset($_SESSION['candidate_error']);
+ ?>

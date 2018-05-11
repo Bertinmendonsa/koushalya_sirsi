@@ -1,3 +1,21 @@
+.foot {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:darkslategray;
+   color: white;
+   text-align: center;
+    height: 9%;
+}
+body{
+    overflow-x:hidden!important;
+}
+.alignn{
+    margin: 20px;
+}
+
+
 body > div.container > div > div.panel-heading.panelcolor{
     background-color: #317eac;
     height: 50px;

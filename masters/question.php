@@ -1,7 +1,18 @@
+<?php
+session_start();
+if($_SESSION['Admin_role'] =="" || $_SESSION['Admin_admin_id']=="")
+{
+  header('Location: login_dashboard.php');
+}
+else{
+
+
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+
     <meta charset="utf-8">
     <title>PMKVY</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,7 +28,7 @@
      <link href="css/header.css" rel="stylesheet">
 
     <!-- jQuery -->
-    
+
 
     <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -57,7 +68,7 @@
             </div>
             <!-- user dropdown ends -->
 
-          
+
 
         </div>
     </div>
@@ -92,9 +103,8 @@
         </li>
 -->
         <h4>Add Question</h4>
-         <a href="#" class="btn btn-info refresh">
-          <span class="glyphicon glyphicon-refresh alignrefresh"></span>
-        </a>
+            <button class="btn btn-info refresh" onclick="myFunction()"><span class="glyphicon glyphicon-refresh alignrefresh"></span></button>
+
     </ul>
 </div>
 
@@ -191,17 +201,10 @@
 
 </div>
  </div>
-</div>  <hr>
-  <footer class="row" style="background-color:darkslategray;">
-        <p class="col-md-9 col-sm-9 col-xs-12 copyright" style="text-align:center;margin-top:190px;color:white;margin-right:90px;">&copy; <a href="http://usman.it" target="_blank">Muhammad
-                Usman</a> 2012 - 2015</p>
-
-<!--
-        <p class="col-md-3 col-sm-3 col-xs-12 powered-by " style="text-align:center;margin-top:190px;color:white:margin-left:90px;">Powered by: <a
-                href="http://usman.it/free-responsive-admin-template">Charisma</a></p>
--->
-    </footer>
-
+</div>
+    <div class="foot">
+  <p class="alignn">MAHAT INNOVATIONS</p>
+</div>
 
 <!-- external javascript -->
 
@@ -273,3 +276,4 @@ $("#opt4").click(function(){
 
 </body>
 </html>
+<?php } ?>

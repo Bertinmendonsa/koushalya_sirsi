@@ -1,3 +1,19 @@
+.foot {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:darkslategray;
+   color: white;
+   text-align: center;
+    height: 9%;
+}
+.alignn{
+    margin: 20px;
+}
+body{
+    overflow-x:hidden!important;
+}
 .role{
     width:20%;
     margin-top: -3%;
@@ -55,10 +71,8 @@ label{
   
   .refresh{ 
     margin-left: 96%;
-    height: 30px;
-    width: 4%;
     margin-top: -62px;!important
-} 
+}
 .breadcrumb{
     width:100%;
 

@@ -1,3 +1,14 @@
+<?php
+session_start();
+if($_SESSION['Admin_role'] =="" || $_SESSION['Admin_admin_id']=="")
+{
+  header('Location: login_dashboard.php');
+}
+else{
+
+
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +41,7 @@
     <link href="css/student_list.css" rel="stylesheet">
 
     <!-- jQuery -->
-    
+
 
 
     <!-- The fav icon -->
@@ -72,10 +83,10 @@
             <!-- user dropdown ends -->
 
             <!-- theme selector starts -->
-           
+
             <!-- theme selector ends -->
 
-          
+
         </div>
     </div>
     <!-- topbar ends -->
@@ -102,9 +113,8 @@
     <ul class="breadcrumb">
 
         <h4>Student List</h4>
-         <a class="btn btn-info refreshh" onclick="refresh()">
-          <span class="glyphicon glyphicon-refresh alignrefresh"></span>
-        </a>
+            <button class="btn btn-info refresh" onclick="myFunction()"><span class="glyphicon glyphicon-refresh alignrefresh"></span></button>
+
     </ul>
 </div>
 
@@ -163,18 +173,6 @@
           }
           ?>
 
-        <!-- <tr>
-          <td>AAC</td>
-          <td>AUSTRALIAN COMPANY </td>
-          <td>$1.38</td>
-          <td>+2.01</td>
-          <td>-0.36%</td>
-          <td>AAC</td>
-          <td>AUSTRALIAN COMPANY </td>
-          <td><button type="button" class="btn btn-default">View</button></td>
-        </tr> -->
-
-
 
       </tbody>
     </table>
@@ -184,17 +182,13 @@
 
 
 
-            <!-- end-->
-            </div>
+</div>
+
+</div>
  </div>
-  <hr>
-  <footer class="row" style="background-color:darkslategray;">
-        <p class="col-md-9 col-sm-9 col-xs-12 copyright" style="text-align:center;margin-top:190px;color:white;margin-right:90px;">&copy; <a href="http://usman.it" target="_blank">Muhammad
-                Usman</a> 2012 - 2015</p>
-
-
-    </footer>
-
+  <div class="foot">
+  <p class="alignn">MAHAT INNOVATIONS</p>
+</div>
 
 <!-- external javascript -->
 
@@ -216,11 +210,18 @@ for (i = 0; i < dropdown.length; i++) {
     <script src="js/student_list.js" type="text/javascript"></script>
 
     <script type="text/javascript">
-      
+
       function refresh(){
         window.location.reload();
       }
 
     </script>
+     <!-- script for refresh button-->
+    <script>
+function myFunction() {
+    location.reload();
+}
+</script>
 </body>
 </html>
+<?php } ?>

@@ -1,3 +1,14 @@
+<?php
+session_start();
+if($_SESSION['Admin_role'] =="" || $_SESSION['Admin_admin_id']=="")
+{
+  header('Location: login_dashboard.php');
+}
+else{
+
+
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,15 +23,13 @@
     <link id="bs-css" href="css/bootstrap-cerulean.min.css" rel="stylesheet">
 
     <link href="css/charisma-app.css" rel="stylesheet">
-    
+
  <link href="css/header.css" rel="stylesheet">
+    <link href="css/dashboard.css" rel="stylesheet">
     <!-- jQuery -->
     <script src="bower_components/jquery/jquery.min.js"></script>
 
-    <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+
 
     <!-- The fav icon -->
     <link rel="shortcut icon" href="img/favicon.ico">
@@ -39,7 +48,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html"> 
+            <a class="navbar-brand" href="index.html">
                 <span>Koushalya kendra</span></a>
 <!--<img alt="Charisma Logo" src="img/logo20.png" class="hidden-xs"/>-->
             <!-- user dropdown starts -->
@@ -57,17 +66,17 @@
             <!-- user dropdown ends -->
 
             <!-- theme selector starts -->
-           
+
             <!-- theme selector ends -->
 
-          
+
 
         </div>
     </div>
     <!-- topbar ends -->
 <div class="ch-container">
     <div class="row">
-        
+
         <!-- left menu starts -->
          <?php require('left-menu.php'); ?>
         <!-- left menu ends -->
@@ -83,14 +92,10 @@
 
         <div id="content" class="col-lg-10 col-sm-10">
             <!-- content starts -->
-            <div>
+     <div>
     <ul class="breadcrumb">
-        <li>
-            <a href="#">Home</a>
-        </li>
-        <li>
-            <a href="#">Dashboard</a>
-        </li>
+        <h4>Dashboard</h4>
+         <button class="btn btn-info refresh" onclick="myFunction()"><span class="glyphicon glyphicon-refresh alignrefresh"></span></button>
     </ul>
 </div>
 <div class=" row">
@@ -114,17 +119,6 @@
         </a>
     </div>
 
-<!--
-    <div class="col-md-3 col-sm-3 col-xs-6">
-        <a data-toggle="tooltip" title="$34 new sales." class="well top-block" href="#">
-            <i class="glyphicon glyphicon-shopping-cart yellow"></i>
-
-            <div>Sales</div>
-            <div>$13320</div>
-            <span class="notification yellow">$34</span>
-        </a>
-    </div>
--->
 
     <div class="col-md-3 col-sm-3 col-xs-6">
         <a data-toggle="tooltip" title="12 new messages." class="well top-block" href="#">
@@ -137,50 +131,16 @@
     </div>
 </div>
 
-<div class="row">
-    <div class="box col-md-12">
-        <div class="box-inner">
-            <div class="box-header well">
-                <h2><i class="glyphicon glyphicon-info-sign"></i> Introduction</h2>
 
-                <div class="box-icon">
-                    <a href="#" class="btn btn-setting btn-round btn-default"><i
-                            class="glyphicon glyphicon-cog"></i></a>
-                    <a href="#" class="btn btn-minimize btn-round btn-default"><i
-                            class="glyphicon glyphicon-chevron-up"></i></a>
-                    <a href="#" class="btn btn-close btn-round btn-default"><i
-                            class="glyphicon glyphicon-remove"></i></a>
-                </div>
-            </div>
-            <div class="box-content row">
-                <div class="col-lg-7 col-md-12">
-                </div>
+</div>
 
-            </div>
-        </div>
     </div>
 </div>
 
+
+<div class="foot">
+  <p class="alignn">MAHAT INNOVATIONS</p>
 </div>
-  
-    </div>
-</div>
-
- 
-
-    <hr>
-
-   
-
-    <footer class="row" style="background-color:darkslategray;">
-        <p class="col-md-9 col-sm-9 col-xs-12 copyright" style="text-align:center;margin-top:190px;color:white;margin-right:90px;">&copy; <a href="http://usman.it" target="_blank">Muhammad
-                Usman</a> 2012 - 2015</p>
-
-<!--
-        <p class="col-md-3 col-sm-3 col-xs-12 powered-by " style="text-align:center;margin-top:190px;color:white:margin-left:90px;">Powered by: <a
-                href="http://usman.it/free-responsive-admin-template">Charisma</a></p>
--->
-    </footer>
 
 
 <!-- external javascript -->
@@ -198,7 +158,15 @@ for (i = 0; i < dropdown.length; i++) {
       dropdownContent.style.display = "grid";
     }
   });
+}
+</script>
+<script>
+function myFunction() {
+    location.reload();
 }</script>
 
 </body>
 </html>
+<?php
+}
+ ?>

@@ -176,13 +176,8 @@ setTimeout(gameLost, 1200000);
         </div>
 
 <!-- footer strats here-->
-<div class="footer">
-
-        <div class="footerr">
-            <p>Copyright</p>
-    </div>
-
-
+ <div class="foot">
+  <p class="alignn">MAHAT INNOVATIONS</p>
 </div>
 <!-- script for timer-->
     <script>

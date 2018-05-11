@@ -1,7 +1,18 @@
+<?php
+session_start();
+if($_SESSION['Admin_role'] =="" || $_SESSION['Admin_admin_id']=="")
+{
+  header('Location: login_dashboard.php');
+}
+else{
+
+
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
- 
+
     <meta charset="utf-8">
     <title>PMKVY</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,11 +24,11 @@
     <link id="bs-css" href="css/bootstrap-cerulean.min.css" rel="stylesheet">
 
     <link href="css/charisma-app.css" rel="stylesheet">
-   
+
     <link href="css/caste.css" rel="stylesheet">
      <link href="css/header.css" rel="stylesheet">
 
-    
+
     <!-- The fav icon -->
     <link rel="shortcut icon" href="img/favicon.ico">
 
@@ -34,7 +45,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html"> 
+            <a class="navbar-brand" href="index.html">
                 <span>Koushalya kendra</span></a>
 <!--<img alt="Charisma Logo" src="img/logo20.png" class="hidden-xs"/>-->
             <!-- user dropdown starts -->
@@ -51,19 +62,19 @@
             </div>
             <!-- user dropdown ends -->
 
-         
+
             <!-- theme selector ends -->
 
-           
+
 
         </div>
     </div>
     <!-- topbar ends -->
 <div class="ch-container">
     <div class="row">
-        
+
         <!-- left menu starts -->
-       
+
         <?php require('left-menu.php'); ?>
         <!--/span-->
         <!-- left menu ends -->
@@ -83,20 +94,19 @@
     <ul class="breadcrumb">
 
         <h4>Add Category</h4>
-         <a href="#" class="btn btn-info refresh">
-          <span class="glyphicon glyphicon-refresh alignrefresh"></span>
-        </a>
+           <button class="btn btn-info refresh" onclick="myFunction()"><span class="glyphicon glyphicon-refresh alignrefresh"></span></button>
+
     </ul>
 </div>
-            
-            
+
+
             <!-- qualifivcation form-->
             <div class="container">
 <!--  <h2>Vertical (basic) form</h2>-->
   <form method="POST" action="master_entry/caste_add.php">
     <div class="form-group">
       <label for="qualification">Category:</label>
-      <input type="text" class="form-control category" id="category" placeholder="Enter Your Category" 
+      <input type="text" class="form-control category" id="category" placeholder="Enter Your Category"
       name="cast_name">
     </div>
 
@@ -111,13 +121,13 @@
 
 </div>
  </div>
-</div>  <hr>
-  <footer class="row" style="background-color:darkslategray;">
-        <p class="col-md-9 col-sm-9 col-xs-12 copyright" style="text-align:center;margin-top:190px;color:white;margin-right:90px;">&copy; <a href="http://usman.it" target="_blank">Muhammad
-                Usman</a> 2012 - 2015</p>
+</div>
+
+<div class="foot">
+  <p class="alignn">MAHAT INNOVATIONS</p>
+</div>
 
 
-    </footer>
 
 
 
@@ -136,5 +146,12 @@ for (i = 0; i < dropdown.length; i++) {
     }
   });
 }</script>
+     <!-- script for refresh button-->
+    <script>
+function myFunction() {
+    location.reload();
+}
+</script>
 </body>
 </html>
+<?php } ?>

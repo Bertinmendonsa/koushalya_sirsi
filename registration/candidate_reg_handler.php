@@ -1,6 +1,6 @@
 <?php
 require('dbconnect.php');
-
+session_start();
 // inputs
 $scheme_Id = $_POST['scheme_Id']; //SELECTED SCHEME ID
 $qualification = $_POST['qualification']; //QUALIFIACTION ID
@@ -91,6 +91,17 @@ $regcenter = $_POST['regcenter']; //REGCENTER ID
 $password = sha1($_POST['password']); //PASSWORD SET BY CANDIDATES
 //newly adder Fields
 $holder_name=$_POST['holder_name'];
+
+
+
+
+// payment integration part
+
+$_SESSION['candidate_name'] = $fname." ".$mname." ".$lname;
+$_SESSION['candidate_mobile'] = $mobile;
+$_SESSION['candidate_email']= $email;
+
+
 
 
 
@@ -220,7 +231,9 @@ $candidateQuery = "INSERT INTO `kk_candidates`(`first_name`, `middle_name`, `las
 
  echo "<br/>".$candidateQuery;
  if(mysqli_query($conn,$candidateQuery)){
-	 header("Location: thank.html");
+	 $last_id = mysqli_insert_id($conn);
+	 $_SESSION['candidate_table_id'] = $last_id;
+	 header("Location: payment.php");
  }
  else{
 	 echo mysqli_error($conn);

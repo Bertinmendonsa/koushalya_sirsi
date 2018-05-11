@@ -1,7 +1,23 @@
+.foot {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:darkslategray;
+   color: white;
+   text-align: center;
+    height: 9%;
+}
+body{
+    overflow-x:hidden!important;
+}
+.alignn{
+    margin: 20px;
+}
 .scheme{
     width:20%;
     margin-top: -3%;
-    margin-left: 11%;
+    margin-left: 12%;
     border: 2px solid skyblue;
 }
 label{
@@ -54,10 +70,8 @@ label{
 }
   .refresh{ 
     margin-left: 96%;
-    height: 30px;
-    width: 4%;
     margin-top: -62px;!important
-} 
+}
 .breadcrumb{
     width:100%;
 
